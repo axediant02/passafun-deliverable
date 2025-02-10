@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "octref.vscode-vetur",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "github.copilot",
+    "lokalise.lokalise-vscode",
+    "davidanson.vscode-markdownlint",
+    "antfu.antfu"
+  ]
+}

@@ -1,0 +1,246 @@
+::-webkit-progress-bar {
+  background-color: #5197ff;
+}
+::-webkit-progress-value {
+  background-color: #ff5733;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+::selection {
+  background-color: #5197ff;
+  color: white;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input {
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+  position: absolute;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+}
+
+.input:focus ~ .user-label,
+.input:not(:placeholder-shown) ~ .user-label {
+  transform: translateY(5%) scale(0.8);
+  padding: 0 0.2em;
+  opacity: 0.8;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.p-carousel-indicator {
+  display: none;
+}
+.p-carousel-indicator-button {
+  display: none;
+}
+
+.game-section .item {
+  background: no-repeat center center / cover;
+}
+.game-section .item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  background-image: linear-gradient(
+    rgba(23, 116, 253, 0),
+    rgba(37, 39, 41, 0.2),
+    rgba(47, 48, 49, 0.5),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.game-section .item-desc {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  cursor: grab;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots button.active {
+  background-color: #333;
+}
+
+.p-carousel .p-carousel-prev-button {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 8;
+}
+
+.p-carousel .p-carousel-next-button {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  z-index: 8;
+}
+
+.p-carousel .p-carousel-empty {
+  display: none;
+}
+
+.p-carousel .p-carousel-indicator-list {
+  display: none;
+}
+
+.background-image-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quiz-card {
+  box-shadow: 0px 2px 0px #5197ff;
+  background-color: #5197ff;
+  position: relative;
+  min-width: 65px;
+  min-height: 65px;
+  border: 2px solid #5197ff;
+  transition: all 0.1s ease-in-out;
+}
+
+.quiz-card:active {
+  box-shadow: 0px 0px 0px #5197ff;
+  top: 2px;
+  transition: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.quiz-card-featured {
+  box-shadow: 0px 2px 0px white;
+  background-color: #5197ff;
+  position: relative;
+  border: 2px solid white;
+  transition: all 0.1s ease-in-out;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-pos {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.left-pos {
+  transform: translateX(-85px) scale(0.8);
+  z-index: 2;
+}
+
+.right-pos {
+  transform: translateX(85px) scale(0.8);
+  z-index: 2;
+}
+
+.back-pos {
+  transform: scale(0.6);
+  z-index: 1;
+  opacity: 0;
+}
+
+.masked-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.masked-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+  background: linear-gradient(
+    rgba(250, 251, 253, 0),
+    rgba(195, 203, 211, 0.2),
+    hsla(210, 100%, 98%, 0.3),
+    rgba(255, 255, 255, 0.4)
+  );
+  pointer-events: none;
+}
+
+.p-image-preview-mask,
+.p-image-preview {
+  border-radius: 12px;
+  overflow: hidden;
+}
